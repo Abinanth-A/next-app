@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next &mdash; Just one thing, matched to your energy.</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn" aria-label="Toggle theme">
+                <svg id="icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg id="icon-moon" class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero reveal">
+            <div class="logo-mark">
+                <img src="logo-light.png" alt="Next Logo" class="logo-light">
+                <img src="logo-dark.png" alt="Next Logo" class="logo-dark">
+            </div>
+            <h1 class="wordmark">Next</h1>
+            <p class="tagline">Just one thing, matched to your energy.</p>
+            <div class="hero-actions">
+                <a href="#download" class="button primary">Download APK</a>
+            </div>
+        </section>
+
+        <!-- Core Idea Section -->
+        <section class="core-idea reveal">
+            <div class="content-wrapper">
+                <h2>Focus is finite.</h2>
+                <p>Most todo apps give you endless lists that drain your momentum.</p>
+                <p>Next is built differently: a widget-first experience that shows you just one task at a time, perfectly matched to your current energy level.</p>
+                <p>No noise. No overwhelming backlog. Just the next right thing to do.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features reveal">
+            <div class="content-wrapper">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Widget-First</h3>
+                        <p>Interact directly from your home screen without opening the app.</p>
+                        <div class="mockup-container">
+                            <img src="assets/widget-light.jpg" alt="Widget UI" class="mockup-light" loading="lazy">
+                            <img src="assets/widget-dark.jpg" alt="Widget UI" class="mockup-dark" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Voice-Add</h3>
+                        <p>Capture thoughts instantly before they slip away.</p>
+                        <div class="mockup-container">
+                            <img src="assets/voice-light.jpg" alt="Voice Input UI" class="mockup-light" loading="lazy">
+                            <img src="assets/voice-dark.jpg" alt="Voice Input UI" class="mockup-dark" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Energy-Matched Today</h3>
+                        <p>One task at a time, perfectly matched to your current energy level.</p>
+                        <div class="mockup-container">
+                            <img src="assets/today-light.jpg" alt="Today Screen UI" class="mockup-light" loading="lazy">
+                            <img src="assets/today-dark.jpg" alt="Today Screen UI" class="mockup-dark" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download-section reveal">
+            <div class="content-wrapper">
+                <h2>Ready for what's next?</h2>
+                <a href="#" class="button primary download-btn">Download Next APK</a>
+                <div class="download-note">
+                    <p><strong>Note:</strong> Next is a direct-install Android application.</p>
+                    <p>You will need to allow "install from unknown sources" in your device settings to install the APK.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer reveal">
+        <p>Developed by <a href="https://abinanth4.is-a.dev" target="_blank" rel="noopener noreferrer">Abinanth</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

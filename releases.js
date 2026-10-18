@@ -1,9 +1,22 @@
 // Single source of truth for Next app releases
 const RELEASES_DATA = [
     {
-        version: "v1.1.6",
-        date: "October 2026",
+        version: "v1.1.7",
+        date: "18 October 2026",
         isLatest: true,
+        groups: [
+            {
+                type: "New",
+                items: [
+                    'A new row on the About screen that opens this page, so you can see what changed in each version and download the latest one.'
+                ]
+            }
+        ]
+    },
+    {
+        version: "v1.1.6",
+        date: "17 October 2026",
+        isLatest: false,
         groups: [
             {
                 type: "Fixed",
@@ -15,7 +28,7 @@ const RELEASES_DATA = [
     },
     {
         version: "v1.1.5",
-        date: "October 2026",
+        date: "14 October 2026",
         isLatest: false,
         groups: [
             {

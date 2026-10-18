@@ -82,13 +82,57 @@ h1, h2, h3, .wordmark {
 /* Nav */
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 2rem;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     z-index: 10;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-back {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s ease;
+}
+
+.nav-back:hover,
+.nav-back:focus-visible {
+    color: var(--ember-mid);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin-left: auto;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .theme-toggle button {
@@ -105,6 +149,11 @@ h1, h2, h3, .wordmark {
 
 .theme-toggle button:hover {
     color: var(--ember-mid);
+}
+
+:focus-visible {
+    outline: 2px solid var(--ember-mid);
+    outline-offset: 3px;
 }
 
 /* Hero Section */
@@ -291,6 +340,33 @@ h1, h2, h3, .wordmark {
     margin-bottom: 2.5rem;
 }
 
+.download-subtext {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.all-releases-wrap {
+    margin-top: 0.85rem;
+}
+
+.all-releases-link {
+    color: var(--text-secondary);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.all-releases-link:hover,
+.all-releases-link:focus-visible {
+    color: var(--text-primary);
+}
+
 .download-note {
     margin-top: 2rem;
     font-size: 0.95rem;
@@ -342,13 +418,124 @@ h1, h2, h3, .wordmark {
     }
 }
 
+/* Updates Page */
+.updates-page {
+    min-height: 80vh;
+    padding: 7rem 2rem 4rem;
+}
+
+.updates-header {
+    text-align: left;
+    margin-bottom: 3.5rem;
+}
+
+.updates-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.intro-line {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+}
+
+.timeline {
+    position: relative;
+    border-left: 2px solid var(--border-color);
+    margin-left: 0.5rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    text-align: left;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: calc(-2rem - 6px);
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text-secondary);
+}
+
+.timeline-item.latest .timeline-dot {
+    background-color: var(--moss);
+    box-shadow: 0 0 0 4px var(--bg-color);
+}
+
+.release-header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.85rem;
+    margin-bottom: 1.25rem;
+}
+
+.release-version {
+    font-size: 1.85rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.release-date {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.badge-latest {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    background-color: var(--moss);
+    color: #FFFFFF;
+}
+
+.release-group {
+    margin-top: 1rem;
+}
+
+.release-group-title {
+    font-family: 'General Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.release-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.release-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.release-summary {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .wordmark {
         font-size: 3.5rem;
     }
     
-    .core-idea h2, .download-section h2 {
+    .core-idea h2, .download-section h2, .updates-header h1 {
         font-size: 2rem;
     }
     
@@ -363,5 +550,21 @@ h1, h2, h3, .wordmark {
     .placeholder-screenshot {
         max-width: 280px;
         margin: 0 auto;
+    }
+
+    .timeline {
+        padding-left: 1.5rem;
+        margin-left: 0.25rem;
+        gap: 2.75rem;
+    }
+
+    .timeline-dot {
+        left: calc(-1.5rem - 5px);
+        width: 8px;
+        height: 8px;
+    }
+
+    .release-version {
+        font-size: 1.5rem;
     }
 }

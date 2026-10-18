@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next &mdash; Just one thing, matched to your energy.</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-dark.png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,23 +18,27 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="theme-toggle">
-            <button id="theme-toggle-btn" aria-label="Toggle theme">
-                <svg id="icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg id="icon-moon" class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+        <div class="nav-brand"></div>
+        <div class="nav-right">
+            <a href="updates.html" class="nav-link">Updates</a>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Toggle theme">
+                    <svg id="icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg id="icon-moon" class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -95,19 +102,20 @@
         <section id="download" class="download-section reveal">
             <div class="content-wrapper">
                 <h2>Ready for what's next?</h2>
-                <a href="#" class="button primary download-btn">Download Next APK</a>
-                <div class="download-note">
-                    <p><strong>Note:</strong> Next is a direct-install Android application.</p>
-                    <p>You will need to allow "install from unknown sources" in your device settings to install the APK.</p>
-                </div>
+                <a href="https://github.com/Abinanth-A/next-releases/releases/latest/download/next.apk" id="main-download-btn" class="button primary download-btn">Download v1.1.6</a>
+                <p class="download-subtext">Direct install, not from the Play Store. Android will ask you to allow installs from unknown sources the first time.</p>
+                <p class="all-releases-wrap">
+                    <a href="https://github.com/Abinanth-A/next-releases/releases" target="_blank" rel="noopener noreferrer" class="all-releases-link">All releases &rarr;</a>
+                </p>
             </div>
         </section>
     </main>
 
     <footer class="footer reveal">
-        <p>Developed by <a href="https://abinanth4.is-a.dev" target="_blank" rel="noopener noreferrer">Abinanth</a></p>
+        <p>Developed by <a href="https://abinanth4.is-a.dev" target="_blank" rel="noopener noreferrer">Abinanth</a> &bull; <a href="updates.html">Updates</a></p>
     </footer>
 
+    <script src="releases.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

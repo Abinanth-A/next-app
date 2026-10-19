@@ -1,14 +1,36 @@
 // Single source of truth for Next app releases
 const RELEASES_DATA = [
     {
-        version: "v1.1.7",
-        date: "18 October 2026",
+        version: "v1.1.8",
+        date: "19 October 2026",
         isLatest: true,
         groups: [
             {
                 type: "New",
                 items: [
+                    'Complete task button on reminder notifications: mark a task done straight from the notification, and its reminders stop.',
+                    'Swipe to browse: on the Today screen, swipe the task card to browse everything due today.',
+                    "Update reminder: a quiet monthly nudge to check What's new, which you can turn off in Settings."
+                ]
+            }
+        ]
+    },
+    {
+        version: "v1.1.7",
+        date: "18 October 2026",
+        isLatest: false,
+        groups: [
+            {
+                type: "New",
+                items: [
                     'A new row on the About screen that opens this page, so you can see what changed in each version and download the latest one.'
+                ]
+            },
+            {
+                type : "Improved",
+                items: [
+                    "The Today screen now shows only tasks due today, with a note when overdue tasks are waiting in Tasks.",
+                    "The home screen widget no longer shows tomorrow's tasks."
                 ]
             }
         ]

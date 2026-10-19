@@ -12,6 +12,13 @@ const RELEASES_DATA = [
                     'Swipe to browse: on the Today screen, swipe the task card to browse everything due today.',
                     "Update reminder: a quiet monthly nudge to check What's new, which you can turn off in Settings."
                 ]
+            },
+            {
+                type : "Improved",
+                items: [
+                    "The Today screen now shows only tasks due today, with a note when overdue tasks are waiting in Tasks.",
+                    "The home screen widget no longer shows tomorrow's tasks."
+                ]
             }
         ]
     },
@@ -24,13 +31,6 @@ const RELEASES_DATA = [
                 type: "New",
                 items: [
                     'A new row on the About screen that opens this page, so you can see what changed in each version and download the latest one.'
-                ]
-            },
-            {
-                type : "Improved",
-                items: [
-                    "The Today screen now shows only tasks due today, with a note when overdue tasks are waiting in Tasks.",
-                    "The home screen widget no longer shows tomorrow's tasks."
                 ]
             }
         ]

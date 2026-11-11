@@ -1,9 +1,30 @@
 // Single source of truth for Next app releases
 const RELEASES_DATA = [
+        {
+        version: "v1.1.9",
+        date: "11 November 2026",
+        isLatest: true,
+        groups: [
+            {
+                type: "New",
+                items: [
+                    "Important tasks: star the tasks that matter most. They show first, appear with a star on the widget, and can be filtered.",
+                    "Reorder tasks: press, hold and drag a task on the Tasks screen to arrange your list your way."
+                ]
+            },
+            {
+                type: "Improved",
+                items: [
+                    "The Low, Medium, High and Important filters now show only unfinished tasks. Completed tasks stay under All.",
+                    "A more reliable widget: Complete and Skip respond on every tap, it updates faster, stays in sync with the app, and no longer gets stuck loading."
+                ]
+            }
+        ]
+    },
     {
         version: "v1.1.8",
         date: "19 October 2026",
-        isLatest: true,
+        isLatest: false,
         groups: [
             {
                 type: "New",

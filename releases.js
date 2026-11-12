@@ -1,9 +1,24 @@
 // Single source of truth for Next app releases
 const RELEASES_DATA = [
+            {
+        version: "v1.1.10",
+        date: "12 November 2026",
+        isLatest: true,
+        groups: [
+            {
+                type: "Improved",
+                items: [
+                    "Fixed the widget staying on a loading screen on some phones, including newer Android versions and fresh installs.",
+                    "If the widget ever can't load, it now shows \"Open Next to refresh\" instead of loading forever.",
+                    "The widget now shows a proper preview when you pick it from the widget list."
+                ]
+            }
+        ]
+    },
         {
         version: "v1.1.9",
         date: "11 November 2026",
-        isLatest: true,
+        isLatest: false,
         groups: [
             {
                 type: "New",
